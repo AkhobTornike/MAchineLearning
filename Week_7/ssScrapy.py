@@ -1,6 +1,5 @@
 from scrapy.http import TextResponse
 import requests
-import pprint
 import pandas as pd
 
 url = requests.get("https://home.ss.ge/ka/udzravi-qoneba/l/bina/iyideba?cityIdList=95&currencyId=1")

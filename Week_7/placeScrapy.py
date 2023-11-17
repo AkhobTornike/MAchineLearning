@@ -1,6 +1,5 @@
 from scrapy.http import TextResponse
 import requests
-import pprint
 import pandas as pd
 import re
 
@@ -21,7 +20,6 @@ bedrooms = []
 floor = []
 district = []
 
-pprint.pprint(links)
 for link in links:
     if link != '/ge/faq?open=5':
         linked_url = requests.get("https://place.ge" + link)
@@ -46,14 +44,6 @@ for link in links:
             floor.append(link_info[5])
             district.append(link_info[4])
 
-
-# print(f'price {price}')
-# print(f'area {area}')
-# print(f'rooms {rooms}')
-# print(f'bedrooms {bedrooms}'
-# print(f'floor {floor}')
-# print(f'district {district}')
-
 data = {
     'Price': price,
     'Area': area,
@@ -66,4 +56,3 @@ data = {
 df = pd.DataFrame(data)
 with pd.ExcelWriter('placeScrapy.xlsx') as writer:
     df.to_excel(writer, index=True)
-
