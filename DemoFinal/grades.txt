@@ -1,0 +1,6 @@
+John,85
+Alice,92
+Bob,78
+Eva,89
+Nika,102
+Toma,99

@@ -1,0 +1,6 @@
+     Product       Date  Quantity      Price  Daily Sales Month
+0  Product D 2022-01-01         7  34.724961          152    01
+1  Product D 2022-01-02        15  60.511908          142    01
+2  Product A 2022-01-03        11  44.463419           64    01
+3  Product B 2022-01-04         8  97.454089          156    01
+4  Product A 2022-01-05         7  86.402244          121    01
